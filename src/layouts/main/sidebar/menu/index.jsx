@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import classNames from "classnames";
 import { mainMenu } from "~/utils/consts";
+import More from "./more";
+import New from "./new";
 
 export default function Menu() {
   return (
@@ -34,6 +36,8 @@ export default function Menu() {
           )}
         </NavLink>
       ))}
+      <More />
+      <New />
     </nav>
   );
 }
